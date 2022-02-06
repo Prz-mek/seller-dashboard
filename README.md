@@ -14,4 +14,5 @@ npm install
 
 npm start
 
-[DEMO](https://prz-mek.github.io/seller-dashboard/#/)
+# DEMO
+[GitHub pages](https://prz-mek.github.io/seller-dashboard/#/)
