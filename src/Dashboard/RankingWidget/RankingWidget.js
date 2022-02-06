@@ -45,7 +45,7 @@ export default function RankingWidget(props) {
                         width="50px"
                         height="50px"
                         alt="item"
-                        src={`./images/${row.imgName}`}
+                        src={`images/${row.imgName}`}
                       />
                       <OfferName>
                         {row.name}

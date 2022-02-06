@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/seller-dashboard/static/css/main.0fe58156.css",
+    "main.js": "/seller-dashboard/static/js/main.c5f66118.js",
+    "index.html": "/seller-dashboard/index.html",
+    "main.0fe58156.css.map": "/seller-dashboard/static/css/main.0fe58156.css.map",
+    "main.c5f66118.js.map": "/seller-dashboard/static/js/main.c5f66118.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fe58156.css",
+    "static/js/main.c5f66118.js"
+  ]
+}

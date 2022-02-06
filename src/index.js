@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { AuthProvider } from "./Login/AuthContext";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import App from "./App";
 import i18n from "./i18n";
 import { StyledEngineProvider } from "@mui/material";
@@ -9,13 +9,13 @@ import { StyledEngineProvider } from "@mui/material";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <StyledEngineProvider injectFirst>
           <App />
         </StyledEngineProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
   rootElement
 );

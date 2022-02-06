@@ -793,7 +793,8 @@ const ranking = {
 
   ]
 }
-module.exports = {
+
+const dataMock = {
   users: function (name, password) {
     return users.find((user) => user.username === name && user.password === password);
   },
@@ -810,4 +811,6 @@ module.exports = {
   saleData: function (name) {
     return saleData[name];
   }
-}
+};
+
+export default dataMock;

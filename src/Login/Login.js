@@ -9,7 +9,7 @@ import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import Widget from "../Common/Widget";
-import { apiUrl } from "../config";
+import dataMock from "../Common/data";
 import { AuthContext } from "./AuthContext";
 const LoginInput = (props) => {
   return (
@@ -37,23 +37,11 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
-    fetch(`${apiUrl}/login`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        login: form.get("login"),
-        password: form.get("password"),
-      })
-    }).then(res => {
-      if (res.ok) {
-        return res.json();
-      }
-    }).then(data => {
-      auth.authenticate(data.login);
+    const signinUser = dataMock.users(form.get("login"), form.get("password"));
+    if (signinUser) {
+      auth.authenticate(signinUser.username);
       navigate(from, { replace: true });
-    });
+    }
   };
   return (
     <Box sx={{

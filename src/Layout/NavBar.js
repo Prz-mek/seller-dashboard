@@ -51,7 +51,7 @@ export default function NavBar(props) {
             {!auth.isAuthenticated ? (
               <AccountCircleIcon />
             ) : (
-              <Avatar sx={{ width: "32px", height: "32px" }} alt={auth.user} src={`./images/${auth.user}.jpg`} />
+              <Avatar sx={{ width: "32px", height: "32px" }} alt={auth.user} src={`images/${auth.user}.jpg`} />
             )}
           </NavBarIcon>
         </Toolbar>

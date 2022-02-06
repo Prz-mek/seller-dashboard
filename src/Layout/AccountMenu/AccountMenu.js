@@ -56,7 +56,7 @@ export default function AccountMenu(props) {
               sx={{ pb: 0 }}
               key="User"
               notButton
-              avatar={<Avatar alt={auth.user} src={`./images/${auth.user}.jpg`}/>}
+              avatar={<Avatar alt={auth.user} src={`images/${auth.user}.jpg`}/>}
               user={{
                 name: auth.user,
                 mail: "textdolny@gmail.com"

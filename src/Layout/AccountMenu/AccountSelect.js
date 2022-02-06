@@ -14,7 +14,7 @@ export default function AccountSelect(props) {
         {props.data.map((user, id) => (
           <MenuListItem
             key={id}
-            avatar={<Avatar alt={user.username} src={`./images/${user.username}.jpg`} />}
+            avatar={<Avatar alt={user.username} src={`images/${user.username}.jpg`} />}
             onClick={() => props.onSelect(user.username)}
             user={{
               name: user.username
