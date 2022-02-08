@@ -18,7 +18,6 @@ You can see demo on [GitHub pages](https://prz-mek.github.io/seller-dashboard/#/
 To run this code Node.js have to be installed.
 Backend (mock) run:
 ```
-# instrukcja startowania projektu
 cd api
 npm install
 npm start
